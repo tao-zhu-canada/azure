@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-test-2021-08-10"
+		},
+		"Sftp1_password": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_servicePrincipalCredential": {
+			"value": ""
+		},
+		"Sftp1_properties_typeProperties_host": {
+			"value": "test.rebex.net"
+		},
+		"Sftp1_properties_typeProperties_userName": {
+			"value": "demo"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://adls2021893783474.dfs.core.windows.net"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_tenant": {
+			"value": "e2a8661d-4a5d-46f5-a21f-b83389dbf53c"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_servicePrincipalId": {
+			"value": "@{linkedService().k1}"
+		}
+	}
+}
