@@ -3,25 +3,7 @@
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorage1",
-			"type": "LinkedServiceReference",
-			"parameters": {
-				"k1": {
-					"value": "@dataset().ds1",
-					"type": "Expression"
-				},
-				"k2": {
-					"value": "@dataset().ds2",
-					"type": "Expression"
-				}
-			}
-		},
-		"parameters": {
-			"ds1": {
-				"type": "string"
-			},
-			"ds2": {
-				"type": "string"
-			}
+			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
