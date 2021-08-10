@@ -67,13 +67,29 @@
 						"referenceName": "DelimitedText2",
 						"type": "DatasetReference",
 						"parameters": {
-							"ds1": "ccc",
-							"ds2": "vvv"
+							"ds1": {
+								"value": "@pipeline().parameters.p1",
+								"type": "Expression"
+							},
+							"ds2": {
+								"value": "@pipeline().parameters.p2",
+								"type": "Expression"
+							}
 						}
 					}
 				]
 			}
 		],
+		"parameters": {
+			"p1": {
+				"type": "string",
+				"defaultValue": "111"
+			},
+			"p2": {
+				"type": "string",
+				"defaultValue": "222"
+			}
+		},
 		"annotations": []
 	}
 }
