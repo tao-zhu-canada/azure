@@ -67,12 +67,13 @@
 						"referenceName": "DelimitedText2",
 						"type": "DatasetReference",
 						"parameters": {
-							"ds1": {
-								"value": "@pipeline().parameters.p1",
+							"container": {
+								"value": "@pipeline().parameters.container",
 								"type": "Expression"
 							},
-							"ds2": {
-								"value": "@pipeline().parameters.p2",
+							"folder": "sample",
+							"file": {
+								"value": "@pipeline().parameters.file",
 								"type": "Expression"
 							}
 						}
@@ -81,11 +82,11 @@
 			}
 		],
 		"parameters": {
-			"p1": {
+			"container": {
 				"type": "string",
 				"defaultValue": "111"
 			},
-			"p2": {
+			"file": {
 				"type": "string",
 				"defaultValue": "222"
 			}
